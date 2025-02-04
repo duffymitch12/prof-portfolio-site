@@ -1,0 +1,60 @@
+{
+  "header": {
+    "name": "Mitchell Duffy",
+    "email": "duffymitch12@gmail.com",
+    "phone": "248-894-5884",
+    "location": "Bloomfield Hills, MI"
+  },
+  "education": {
+    "degree": "Bachelor of Science in Computer Science",
+    "institution": "University of Michigan",
+    "location": "Ann Arbor, MI",
+    "graduationDate": "Dec 2024"
+  },
+  "experience": [
+    {
+      "title": "Startup Intern",
+      "company": "Luci Smart Finance",
+      "location": "(Remote) Houston, TX",
+      "start": "Feb. 2022",
+      "end": "Present",
+      "info": [
+        "Execute initial product beta testing, evaluating design, functionality, and usability, to determine opportunities for improvement regarding user interface and experience",
+        "Conduct outreach and identify target users as a campus ambassador to test the beta version of the product and provide relevant feedback used to improve the product",
+        "Optimize the front end of the website used to improve the capabilities and design of the website and hold the waitlist for the upcoming product"
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "CAEN IT",
+      "location": "Ann Arbor, MI",
+      "start": "Jul. 2022",
+      "end": "Dec. 2024",
+      "info": [
+        "Develop and maintain a variety of web applications for the School of Engineering (faculty, labs, and organizations) using WordPress, CSS, and HTML",
+        "Coordinate with site owners and users to deliver inquiry solutions to strengthen the usability and capability of their web applications",
+        "Minimize costs by 50% by developing an application to determine the optimal transcription service to utilize for lecture recordings, by running comparisons against the correct transcription"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Portfolio Website",
+      "description": "A personal portfolio website to showcase my projects and skills.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Typescript",
+        "Pnpm",
+        "Next.js",
+        "Tailwind CSS"
+      ]
+    }
+  ],
+  "technicalSkills": [
+    "Programming Languages: C++, Python, HTML, CSS, JavaScript, Flask, React, .jsx & .tsx, tailwindcss, Next.js, Swift, node.js, Express.js, Pnpm"
+  ],
+  "maybe-add": ["Web Development: HTML, CSS, React, Node.js"]
+}

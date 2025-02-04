@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @theme {
+  --color-columbia-blue: #A5C4D4;
+  --color-dim-gray: #626868;
+  --color-poppy: #DA2C38;
+  --color-jet: #020402;
+  --color-citron: #C3BF6D;
+} */
 
 input[type='number'] {
   -moz-appearance: textfield;
@@ -16,3 +23,4 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
