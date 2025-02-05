@@ -5,31 +5,15 @@ import { montserrat } from "@/app/ui/fonts";
 import resume from "@/app/lib/resume.json";
 
 export default async function EducationContainer() {
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     const education = resume.education;
-
     return (
-        <div className="inline-block columns-2 gap-2 p-6 max-w-sm mx-auto rounded-xl shadow-lg">
-            <div className="flex p-4">
-                <h3 className="ml-2 text-sm font-medium">{education.institution}</h3>
-            </div>
-            <p
-                className={`${montserrat.className}
-            truncate rounded-xl bg-white px-4 py-8 text-center text-2xl`}
-            >
-                {education.degree}
-            </p>
-            <p
-                className={`${montserrat.className}
-            truncate rounded-xl bg-white px-4 py-8 text-center text-2xl`}
-            >
-                {education.location}
-            </p>
-            <p
-                className={`${montserrat.className}
-            truncate rounded-xl bg-white px-4 py-8 text-center text-2xl`}
-            >
-                {education.graduationDate}
-            </p>
+        <div className="bg-gray-50 p-6 rounded-lg">
+            <h4
+                className={`${montserrat.className} font-semibold mb-4 text-md text-gray-700`}>
+                I graduated from The <span>{education.institution}</span>, <span>{education.location}</span> with a <span>{education.degree}</span>
+                {" "}in the <span>{education.graduationDate}</span> semester.
+            </h4>
         </div>
     )
 }

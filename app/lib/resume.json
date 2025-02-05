@@ -50,11 +50,14 @@
         "Pnpm",
         "Next.js",
         "Tailwind CSS"
-      ]
+      ],
+      "date": "2024"
     }
   ],
   "technicalSkills": [
-    "Programming Languages: C++, Python, HTML, CSS, JavaScript, Flask, React, .jsx & .tsx, tailwindcss, Next.js, Swift, node.js, Express.js, Pnpm"
+    "C++", "Python", "HTML", "CSS", "JavaScript", "Flask", "React", ".jsx & .tsx", "tailwindcss", "Next.js", "Swift", "node.js", "Express.js", "Pnpm"
   ],
-  "maybe-add": ["Web Development: HTML, CSS, React, Node.js"]
+  "maybe-add": [
+    "Web Development: HTML, CSS, React, Node.js"
+  ]
 }
