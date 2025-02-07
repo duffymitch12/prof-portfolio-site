@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* @theme {
   --color-columbia-blue: #A5C4D4;
   --color-dim-gray: #626868;
@@ -8,6 +9,62 @@
   --color-jet: #020402;
   --color-citron: #C3BF6D;
 } */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes dissolve {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  /* Ensures the text is hidden until typed */
+  border-right: 0.15em solid black;
+  /* The caret */
+  white-space: nowrap;
+  /* Keeps the text on a single line */
+  margin: 0 auto;
+  /* Centers the text */
+  letter-spacing: 0.15em;
+  /* Adjust spacing for a typewriter feel */
+  animation:
+    typing 4s steps(40, end),
+    /* Slower typing animation */
+    blink-caret 0.75s step-end infinite,
+    /* Blinking caret */
+    dissolve 1s ease-out 4s forwards;
+  /* Dissolves after typing */
+}
+
+.typewriter.done {
+  border-right: none;
+  /* Remove the caret after typing */
+}
 
 input[type='number'] {
   -moz-appearance: textfield;
@@ -23,4 +80,3 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-

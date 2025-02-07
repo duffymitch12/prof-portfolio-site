@@ -6,7 +6,7 @@ import resume from "@/app/lib/resume.json";
 // import {}
 
 export default async function ProjectWrapper() {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    // await new Promise((resolve) => setTimeout(resolve, 3000));
     const data = resume.projects;
     return (
         data.map((p, index) => (

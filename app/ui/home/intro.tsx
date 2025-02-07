@@ -1,18 +1,22 @@
 // app/ui/home/Intro.tsx
 export default async function Intro() {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
     return (
-        <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-justify-center text-lg font-medium mb-4 text-gray-700">
-                Welcome I am Mitch Duffy, I am a recent grad with experience in{" "}
-                <span className="text-md font-extrabold text-[#C3BF6D]">
-                Web Development
-                </span>{" "}
-                and{" "}
-                <span className="text-md font-extrabold text-[#C3BF6D]">
-                Startups
-                </span>
-            </h3>
-        </div>
+        <>
+            <h1 className="text-6xl font-bold mt-16">Mitchell Duffy</h1>
+            <div className="flex mt-16 font-light text-gray-500 gap-3">
+                <div className="pr-4">
+                    <span className="uppercase">City</span>
+                    <p className="text-2xl text-gray-900 font-semibold pt-2">Bloomfield Hills</p>
+                </div>
+                <div className="pr-4">
+                    <span className="uppercase">State</span>
+                    <p className="text-2xl text-gray-900 font-semibold pt-2">Michigan</p>
+                </div>
+                <div className="pr-4">
+                    <span className="uppercase">Zipcode</span>
+                    <p className="text-2xl text-gray-900 font-semibold pt-2">48304</p>
+                </div>
+            </div>
+        </>
     );
 }

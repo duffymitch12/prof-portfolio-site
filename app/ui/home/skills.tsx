@@ -8,7 +8,7 @@ import resume from "@/app/lib/resume.json";
 // import {}
 
 export default async function TechSkillsWrapper() {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    // await new Promise((resolve) => setTimeout(resolve, 3000));
     const data = resume.technicalSkills;
     return (
         <div className="grid grid-cols-[65px_65px_65px_65px] gap-2">
