@@ -13,7 +13,7 @@ export default function BannerContainer() {
             {/* <Typewriter /> */}
 
             {/* Hero Block */}
-            <div className="flex flex-wrap items-center h-screen">
+            <div className="flex flex-wrap items-center h-screen" id="hero">
                 {/* Left Side: Text Content */}
                 <div
                     className="bg-white w-full md:w-1/2 h-screen flex items-center justify-center"

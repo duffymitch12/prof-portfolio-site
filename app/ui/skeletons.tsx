@@ -29,7 +29,7 @@ export function ExperienceSkeleton() {
     return (
         <div className="flex flex-col gap-4">
             {[1, 2, 3].map((_, index) => (
-                <div key={index} className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-6 shadow-sm`}>
+                <div key={index} className={`animate-pulse relative overflow-hidden rounded-xl bg-gray-100 p-6 shadow-sm`}>
                     <div className="h-5 w-3/4 bg-gray-200 rounded-md mb-3"></div> {/* Simulated job title */}
                     <div className="h-4 w-1/2 bg-gray-200 rounded-md mb-2"></div> {/* Simulated company */}
                     <div className="h-4 w-1/3 bg-gray-200 rounded-md mb-2"></div> {/* Simulated location */}
@@ -49,7 +49,7 @@ export function ProjectsSkeleton() {
     return (
         <div className="flex flex-col gap-4">
             {[1, 2, 3].map((_, index) => (
-                <div key={index} className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-6 shadow-sm`}>
+                <div key={index} className={`animate-pulse relative overflow-hidden rounded-xl bg-gray-100 p-6 shadow-sm`}>
                     <div className="h-5 w-3/4 bg-gray-200 rounded-md mb-3"></div> {/* Simulated project name */}
                     <div className="h-4 w-1/2 bg-gray-200 rounded-md mb-4"></div> {/* Simulated date */}
                     <div className="h-4 w-full bg-gray-200 rounded-md mb-4"></div> {/* Simulated description */}
@@ -68,7 +68,7 @@ export function SkillsSkeleton() {
     return (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
-                <div key={index} className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-6 shadow-sm`}>
+                <div key={index} className={`animate-pulse relative overflow-hidden rounded-xl bg-gray-100 p-6 shadow-sm`}>
                     <div className="h-4 w-3/4 bg-gray-200 rounded-md mx-auto"></div> {/* Simulated skill */}
                 </div>
             ))}

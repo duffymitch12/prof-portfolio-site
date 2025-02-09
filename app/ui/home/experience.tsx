@@ -10,11 +10,11 @@ export default async function ExperienceWrapper() {
     return (
         <>
             {/* <section> */}
-            <div className="flex bg-slate-700 text-white py-8 w-full">
+            <div className="flex bg-[#1B1818] text-white py-8 w-full" id="experience">
                 <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
                     {/* Left Side: Header */}
                     <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-                        <p className="ml-2 text-[#779FA1] uppercase tracking-loose">Work Experience</p>
+                        <p className="ml-2 text-[#79AEA3] uppercase tracking-loose">Work Experience</p>
                         <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">
                             Professional Journey
                         </p>
@@ -23,7 +23,7 @@ export default async function ExperienceWrapper() {
                         </p>
                         <a
                             href="#"
-                            className="bg-transparent mr-auto hover:bg-[#779FA1] text-[#779FA1] hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-[#779FA1] hover:border-transparent"
+                            className="bg-transparent mr-auto hover:bg-[#79AEA3] text-[#79AEA3] hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-[#779FA1] hover:border-transparent"
                         >
                             Download Resume
                         </a>
@@ -91,7 +91,7 @@ export function Job({
         <>
             <div className="order-1 w-5/12"></div>
             <div className={`order-1 w-5/12 px-1 py-4 ${idx % 2 === 0 ? "text-right" : "text-left"}`}>
-                <p className="mb-3 text-base text-[#779FA1]">
+                <p className="mb-3 text-base text-[#79AEA3]">
                     {start} - {end}
                 </p>
                 <h4 className="mb-3 font-bold text-lg md:text-2xl">{title}<span className="text-lg font-black px-2">|</span>{company}</h4>
@@ -100,7 +100,7 @@ export function Job({
                 </p>
                 <ul className="mt-2 list-disc list-inside space-y-1">
                     {info.map((description, i) => (
-                        <li key={i} className="text-left text-pretty text-sm -indent-5 text-gray-50 mb-2">
+                        <li key={i} className="text-pretty text-sm text-gray-50 mb-2">
                             {description}
                         </li>
                     ))}
