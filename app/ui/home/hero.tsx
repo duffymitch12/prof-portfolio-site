@@ -29,13 +29,13 @@ export default function BannerContainer() {
                     </div>
                 </div>
                 {/* Right Side: Image */}
-                <div className=" w-full md:w-1/3 h-screen">
+                <div className=" w-full md:w-1/3 h-screen mx-auto text-center rounded-xl">
                     <Image
-                        src="/dumpster-fire-solid.svg" // Path to your SVG in the public folder
-                        alt="Dumpster Fire Icon"
-                        width={200} // Adjust as needed
-                        height={200} // Adjust as needed
-                        className="h-screen w-full object-fit"
+                        src="/mitch-ai.png" // Path to your SVG in the public folder
+                        alt="AI Generated Image of mitch duffy"
+                        width={300} // Adjust as needed
+                        height={300} // Adjust as needed
+                        className="h-full object-contain rounded-xl"
                     />
                 </div>
             </div >

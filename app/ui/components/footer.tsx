@@ -18,26 +18,6 @@ export default function Footer() {
                                 <FontAwesomeIcon icon={['fas', 'phone']} className="text-3xl text-gray-600 hover:text-black mr-4" /> (248) 894-5884
                             </a>
                         </div>
-                        {/* <div className="px-5 py-2">
-                            <a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                                Team
-                            </a>
-                        </div>
-                        <div className="px-5 py-2">
-                            <a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                                Pricing
-                            </a>
-                        </div>
-                        <div className="px-5 py-2">
-                            <a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                                Contact
-                            </a>
-                        </div>
-                        <div className="px-5 py-2">
-                            <a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                                Terms
-                            </a>
-                        </div> */}
                     </nav>
                     <div className="flex justify-center space-x-6 p-4 bg-gray-100">
                         <FontAwesomeIcon icon={['fab', 'github']} className="text-4xl text-gray-600 hover:text-black" />
