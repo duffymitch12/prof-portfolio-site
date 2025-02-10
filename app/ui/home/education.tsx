@@ -19,7 +19,7 @@ export default async function EducationContainer() {
                         alt="University of Michigan Logo"
                     />
                 </div>
-                <div className="col-span-3 md:col-span-2 text-sm text-gray-700 font-medium">
+                <div className="col-span-3 md:col-span-2 text-sm text-gray-800 font-medium">
                     I am a recent graduate with a Bachelor of Science in Computer Science from the <span>{education.institution}</span>, Ann Arbor (December 2024). I have hands-on experience in
                     <span className="text-md font-extrabold text-[#f68c5a]"> Web Development </span>
                     and a background in working with

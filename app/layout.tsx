@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { montserrat } from "@/app/ui/fonts";
 import '@/app/ui/global.css';
-import Navbar from '@/app/ui/home/nav'
+import Navbar from '@/app/ui/components/nav'
+import Footer from "@/app/ui/components/footer";
+import "@/app/lib/fontawesome"; // ✅ Import the icons setup
+import "@fortawesome/fontawesome-svg-core/styles.css"; // ✅ Required to load icons properly
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
 
 export const metadata: Metadata = {
   title: "Mitch Duffy",
@@ -26,11 +32,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-          <h3>duffymitch12@gmail.com</h3>
-          <h3>(248)-894-5884</h3>
-          <h3>Bloomfield Hills, MI 48304</h3>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

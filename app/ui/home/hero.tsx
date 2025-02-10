@@ -16,7 +16,7 @@ export default function BannerContainer() {
             <div className="flex flex-wrap items-center h-screen" id="hero">
                 {/* Left Side: Text Content */}
                 <div
-                    className="bg-white w-full md:w-1/2 h-screen flex items-center justify-center"
+                    className="bg-white w-full md:w-2/3 h-screen flex items-center justify-center"
                 >
                     <div className="mx-8 md:mx-20 md:pl-6">
                         <Suspense fallback={<IntroSkeleton />}>
@@ -29,7 +29,7 @@ export default function BannerContainer() {
                     </div>
                 </div>
                 {/* Right Side: Image */}
-                <div className=" w-full md:w-1/2 h-screen">
+                <div className=" w-full md:w-1/3 h-screen">
                     <Image
                         src="/dumpster-fire-solid.svg" // Path to your SVG in the public folder
                         alt="Dumpster Fire Icon"
