@@ -13,8 +13,8 @@ export default async function ExperienceWrapper() {
                 <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
                     {/* Left Side: Header */}
                     <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-                        <h2 className="ml-2 text-[#00416A] uppercase tracking-loose font-semibold">Work Experience</h2>
-                        <h3 className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-bold">
+                        <h2 className="ml-2 mb-6 text-[#00416A] uppercase tracking-loose font-semibold underline underline-offset-6 decoration-black decoration-4">Work Experience</h2>
+                        <h3 className="text-2xl md:text-3xl leading-normal md:leading-relaxed mb-2 font-bold">
                             Career History
                         </h3>
                         <p className="text-sm md:text-base text-gray-800 mb-4">
@@ -34,12 +34,11 @@ export default async function ExperienceWrapper() {
                             <div className="relative wrap overflow-hidden p-10 h-full">
                                 {/* Timeline Line */}
                                 <div
-                                    className="border-2-2 absolute h-full border"
-                                    style={{ right: "50%", border: "2px solid #A30000", borderRadius: "1%" }}
+                                    className="border-2-2 absolute h-full border-2 border-[#A30000] rounded-md right-1/2"
+
                                 ></div>
                                 <div
-                                    className="border-2-2 absolute h-full border"
-                                    style={{ left: "50%", border: "2px solid #A30000", borderRadius: "1%" }}
+                                    className="border-2-2 absolute h-full border-2 border-[#A30000] rounded-md left-1/2"
                                 ></div>
 
                                 {/* Timeline Entries */}

@@ -72,9 +72,6 @@
     }
   ],
   "technicalSkills": [
-    "C++", "Python", "HTML", "CSS", "JavaScript", "Flask", "React", ".jsx & .tsx", "tailwindcss", "Next.js", "Swift", "node.js", "Express.js", "Pnpm"
-  ],
-  "maybe-add": [
-    "Web Development: HTML, CSS, React, Node.js"
+    "c++", "python", "html", "css", "javascript", "Flask", "React", "tailwindcss", "next.js", "swiftui", "node.js", "typescript", "postgresql", "sqlit3", "vue.js", "bootstrap", "figma"
   ]
 }
