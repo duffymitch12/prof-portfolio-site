@@ -25,14 +25,17 @@ const Navbar = () => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
         } else {
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = '';
         }
+        return () => {
+            document.body.style.overflow = '';
+        };
     }, [isOpen]);
 
 
     return (
         <nav className="fixed w-full top-0 pt-2 z-50 border-b-2 border-gray-200 pb-6 md:pb-2 bg-[#fefefe]">
-            {!isOpen && (<h1 className="md:hidden text-xl font-semibold ml-4 mt-2 text-nowrap underline underline-offset-8 decoration-[#1A535C] decoration-4">Mitchell Duffy</h1>)}
+            {!isOpen && (<h1 className="md:hidden text-2xl font-semibold text-[#000101] text-opacity-100 ml-4 mt-2 text-nowrap underline underline-offset-[6px] decoration-[#277986] decoration-[3px]">Mitchell Duffy</h1>)}
             <div className="hidden container mx-auto md:flex justify-center items-center p-6 md:h-10 bg-white opacity-100">
                 {/* Nav Links - Desktop */}
                 <div className="hidden md:flex flex-row space-x-8">
@@ -82,10 +85,10 @@ const Navbar = () => {
                     {/* Right Column Navigation */}
                     <div className="col-span-3 bg-white h-dvh w-full">
                         <div className="flex flex-col items-end text-lg font-semibold text-[#1B1B1B] text-opacity-70">
-                            <div className="flex flex-row w-full justify-between">
-                                {isOpen && (<h1 className="md:hidden text-xl font-semibold pl-4 pb-2 text-nowrap underline underline-offset-8 decoration-[#1A535C] decoration-4">Mitchell Duffy</h1>)}
+                            <div className="flex flex-row w-full justify-between pb-4">
+                                {isOpen && (<h1 className="md:hidden text-2xl font-semibold text-[#000101] text-opacity-100 ml-4 mt-2 text-nowrap underline underline-offset-[6px] decoration-[#277986] decoration-[3px]   ">Mitchell Duffy</h1>)}
                                 <button
-                                    className="pr-4 pb-2 text-right text-3xl text-[#1B1B1B] focus:outline-none"
+                                    className="pr-4 text-right text-3xl text-[#1B1B1B] focus:outline-none"
                                     onClick={closeMenu}
                                 >
                                     <FontAwesomeIcon icon={faTimes} />

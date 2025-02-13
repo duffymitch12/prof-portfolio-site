@@ -5,8 +5,8 @@ export default function Footer() {
 
     return (
         <>
-            <section className="bg-[#424B54] shadow-md shadow-black dark:bg-gray-800">
-                <div className="max-w-screen-xl px-4 py-6 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+            <section className="bg-[#424B54] w-dvw dark:bg-gray-800">
+                <div className="md:px-4 py-6 mx-auto space-y-8 overflow-hidden px-6 lg:px-8">
                     <nav className="flex flex-wrap justify-center -mx-5 -my-2">
                         <div className="flex flex-row px-5 py-2">
                             <a href="mailto:duffymitch12@gmail.com" className="text-base leading-6 hover:text-[#9DC3C2] text-gray-50">

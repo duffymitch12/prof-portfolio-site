@@ -26,18 +26,18 @@ export default function card({
     return (
         <>
             <div className="relative  mx-auto">
-                <div className="bg-white shadow-sm shadow-black rounded-lg md:w-auto w-full  dark:bg-gray-800 dark:border-gray-700 md:h-[460px] h-3/4">
+                <div className="bg-white shadow-sm shadow-black rounded-lg md:w-full w-screen  dark:bg-gray-800 dark:border-gray-700 md:h-[460px]">
                     <div className="relative">
-                        {underConstruction ? <Image className="blur-xs rounded-t-lg mx-auto w-full object-cover object-top h-60" width={400} height={300} src='/under-construction.webp' alt="card image" /> : <Image className="blur-xs rounded-t-lg mx-auto w-full object-cover h-60" width={400} height={300} src={fileName} alt="card image" />}
+                        {underConstruction ? <Image className="blur-xs rounded-t-lg mx-auto object-cover object-top w-full md:w-dvw md:h-60 h-30" width={400} height={300} src='/under-construction.webp' alt="card image" /> : <Image className="blur-xs rounded-t-lg mx-auto w-full md:w-dvw  object-cover md:h-60 h-30" width={400} height={300} src={fileName} alt="card image" />}
 
-                        {additional && <p className="absolute bottom-0 right-0 bg-[#00416a] text-white text-sm pr-3 pl-12 py-1 rounded-tl-2xl">{additional}</p>}
+                        {additional && <p className="absolute bottom-0 right-0 bg-[#00416a] text-white md:text-sm text-md md:pr-3 md:pl-12 pr-2 pl-6 py-1 rounded-tl-2xl">{additional}</p>}
                     </div>
 
-                    <div className="pt-2 px-4 h-[200px]">
-                        <h5 className="text-gray-900 font-semibold text-2xl tracking-tight my-2 dark:text-white">{header}</h5>
-                        <p className="font-normal text-gray-700 mb-4 dark:text-gray-400">{description}</p>
+                    <div className="relative">
+                        <h5 className="pl-4 text-gray-900 md:font-semibold font-medium md:text-2xl text-xl tracking-tight md:my-2 my-1 dark:text-white">{header}</h5>
+                        <p className="px-4 md:font-normal font-light text-gray-700 md:mb-4 mb-2 dark:text-gray-400 md:text-lg text-md">{description}</p>
                         {additionalList && (
-                            <p className="absolute italic bottom-4 font-light text-black text-nowrap">{additionalList.join(' | ')}</p>
+                            <p className="italic px-4 pb-4 md:pb-0 font-light text-black text-nowrap text-sm md:text-lg">{additionalList.join(' | ')}</p>
                         )}
                     </div>
                 </div>

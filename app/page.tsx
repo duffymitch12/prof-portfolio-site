@@ -6,11 +6,14 @@ import ExperienceWrapper from "@/app/ui/home/experience";
 import ProjectWrapper from "@/app/ui/home/projects";
 import TechSkillsWrapper from "@/app/ui/home/skills";
 import { ExperienceSkeleton, ProjectsSkeleton, SkillsSkeleton } from "@/app/ui/skeletons";
+import MobileAlert from "./ui/components/mobile-alert";
 
 
 export default async function Page() {
+
   return (
     <main className="flex flex-col gap-8 row-start-2 items-center bg-[#fefffe] ">
+      <MobileAlert />
       <div className="w-full" id="hero">
         <BannerContainer />
       </div>

@@ -11,7 +11,7 @@ export default async function TechSkillsWrapper() {
     const skills = resume.technicalSkills;
     return (
         <>
-            <h2 className="mx-auto text-center text-2xl font-bold text-black underline underline-offset-8 decoration-[#1A535C] decoration-4" id="skills">Skills</h2>
+            <h2 className="mx-auto text-center md:text-2xl text-lg font-semibold text-black underline uppercase underline-offset-[7px] decoration-[#277986] decoration-4" id="skills">Skills</h2>
 
             <div className="grid grid-cols-6 gap-2 content-center w-full mb-8" id="skills">
                 {skills.map((item, index) => (
