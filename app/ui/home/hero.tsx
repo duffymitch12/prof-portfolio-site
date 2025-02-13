@@ -13,7 +13,7 @@ export default function BannerContainer() {
             {/* <Typewriter /> */}
 
             {/* Hero Block */}
-            <div className="flex flex-wrap items-center h-screen" id="hero">
+            <div className="flex flex-col-reverse md:flex-wrap items-center h-screen md:mt-0 mt-24" id="hero">
                 {/* Left Side: Text Content */}
                 <div
                     className="bg-white w-full md:w-2/3 h-screen flex items-center justify-center"
@@ -29,7 +29,7 @@ export default function BannerContainer() {
                     </div>
                 </div>
                 {/* Right Side: Image */}
-                <div className=" w-full md:w-1/3 h-screen mx-auto text-center rounded-xl">
+                <div className=" w-fit md:w-1/3 md:h-screen mx-auto text-center rounded-xl md:mt-0 ">
                     <Image
                         src="/mitch-ai.png" // Path to your SVG in the public folder
                         alt="AI Generated Image of mitch duffy"

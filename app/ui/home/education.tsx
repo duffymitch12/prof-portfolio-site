@@ -8,7 +8,7 @@ export default async function EducationContainer() {
     const education = resume.education;
     return (
         <>
-            <div className="grid grid-cols-3 w-3/4 md:w-2/3 mt-8 gap-6 items-center">
+            <div className="grid grid-cols-3 w-3/4 md:w-2/3 mt-8 gap-6 items-center mx-auto">
                 {/* Image (1/3 of the width) */}
                 <div className="col-span-3 md:col-span-1 flex justify-start">
                     <Image

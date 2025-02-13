@@ -10,9 +10,9 @@ export default async function ExperienceWrapper() {
         <>
             {/* <section> */}
             <div className="flex bg-[#fefefe] text-gray-800 py-8 w-full" id="experience">
-                <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+                <div className="container mx-auto flex flex-col items-start md:flex-row my-6 md:my-12">
                     {/* Left Side: Header */}
-                    <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+                    <div className="flex flex-col w-full sticky md:w-1/3 mt-2 md:mt-12 px-8">
                         <h2 className="ml-2 mb-6 text-[#00416A] uppercase tracking-loose font-semibold underline underline-offset-6 decoration-black decoration-4">Work Experience</h2>
                         <h3 className="text-2xl md:text-3xl leading-normal md:leading-relaxed mb-2 font-bold">
                             Career History

@@ -10,7 +10,7 @@ import { ExperienceSkeleton, ProjectsSkeleton, SkillsSkeleton } from "@/app/ui/s
 
 export default async function Page() {
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start bg-[#fefffe] scroll-smooth">
+    <main className="flex flex-col gap-8 row-start-2 items-center bg-[#fefffe] ">
       <div className="w-full" id="hero">
         <BannerContainer />
       </div>
