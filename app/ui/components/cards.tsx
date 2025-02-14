@@ -37,7 +37,7 @@ export default function card({
                         <h5 className="pl-4 text-gray-900 md:font-semibold font-medium md:text-2xl text-xl tracking-tight md:my-2 my-1 dark:text-white">{header}</h5>
                         <p className="px-4 md:font-normal font-light text-gray-700 md:mb-4 mb-2 dark:text-gray-400 md:text-lg text-md">{description}</p>
                         {additionalList && (
-                            <p className="italic px-4 pb-4 md:pb-0 font-light text-black text-nowrap text-sm md:text-lg">{additionalList.join(' | ')}</p>
+                            <p className="tracking-tight dark:text-white italic px-4 pb-4 md:pb-0 font-light text-black text-sm md:text-lg">{additionalList.join(' | ')}</p>
                         )}
                     </div>
                 </div>
