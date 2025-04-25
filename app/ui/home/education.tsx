@@ -1,7 +1,7 @@
 // component for education on resume
 
 import Image from 'next/image';
-// import { montserrat } from "@/app/ui/fonts";
+
 import resume from "@/app/lib/resume.json";
 
 export default async function EducationContainer() {

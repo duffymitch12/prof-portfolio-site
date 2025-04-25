@@ -1,7 +1,7 @@
 // componeent for experiences
 // import { Suspense } from "react";
 import resume from "@/app/lib/resume.json";
-// import {}
+
 
 export default async function ExperienceWrapper() {
     const data = resume.experience;

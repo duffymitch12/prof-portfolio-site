@@ -1,0 +1,263 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* @theme {
+  --color-columbia-blue: #A5C4D4;
+  --color-dim-gray: #626868;
+  --color-poppy: #DA2C38;
+  --color-jet: #020402;
+  --color-citron: #C3BF6D;
+} */
+
+:root {
+  --font-main: 'Fira Sans', sans-serif;
+  /* Colors */
+  --color-background: #fefefe;
+  --color-text-primary: #000101;
+  --color-accent: #277986;
+  --color-text-secondary: #1B1B1B;
+  --color-menu-dark: #1a1a1a;
+
+  /* Sizes */
+  --nav-border-width: 2px;
+  --nav-underline-offset: 6px;
+  --nav-underline-thickness: 3px;
+  --nav-height-mobile: auto;
+  --nav-height-desktop: 2.5rem;
+
+  /* Opacities */
+  --text-opacity-primary: 1;
+  --text-opacity-secondary: 0.7;
+  --divider-opacity: 0.2;
+
+  /* Transitions */
+  --transition-duration: 300ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Mono', sans-serif;
+  font-weight: 700;
+}
+
+body,
+p {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 0.5rem;
+  z-index: 50;
+  border-bottom: var(--nav-border-width) solid rgb(229 231 235);
+  padding-bottom: 1.5rem;
+  background-color: var(--color-background);
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  opacity: var(--text-opacity-primary);
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  text-wrap: nowrap;
+  text-decoration: underline;
+  text-underline-offset: var(--nav-underline-offset);
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: var(--nav-underline-thickness);
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+.desktop-nav-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  height: var(--nav-height-desktop);
+  background-color: white;
+  opacity: var(--text-opacity-primary);
+}
+
+@media (min-width: 768px) {
+  .desktop-nav-wrapper {
+    display: flex;
+  }
+}
+
+.nav-link {
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  opacity: var(--text-opacity-secondary);
+  transition-duration: var(--transition-duration);
+}
+
+.nav-link:hover {
+  opacity: var(--text-opacity-primary);
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 1.125rem;
+  }
+}
+
+.mobile-menu-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  text-align: left;
+  transition-duration: var(--transition-duration);
+  position: absolute;
+  inset: 0;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-wrapper {
+    display: none;
+  }
+}
+
+.mobile-menu-left {
+  grid-column: span 1 / span 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+}
+
+.mobile-menu-right {
+  grid-column: span 3 / span 3;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.mobile-menu-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.mobile-nav-link {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-nav-link:hover {
+  opacity: var(--text-opacity-primary);
+}
+
+.nav-divider {
+  border-top: var(--nav-border-width) solid rgb(75, 85, 99);
+  width: 83.333333%;
+  opacity: var(--divider-opacity);
+}
+
+.nav-hidden-divider {
+  display: none;
+  border-top: var(--nav-border-width) solid rgb(75, 85, 99);
+  width: 83.333333%;
+  opacity: var(--divider-opacity);
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes dissolve {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  /* Ensures the text is hidden until typed */
+  border-right: 0.15em solid black;
+  /* The caret */
+  white-space: nowrap;
+  /* Keeps the text on a single line */
+  margin: 0 auto;
+  /* Centers the text */
+  letter-spacing: 0.15em;
+  /* Adjust spacing for a typewriter feel */
+  animation:
+    typing 4s steps(40, end),
+    /* Slower typing animation */
+    blink-caret 0.75s step-end infinite,
+    /* Blinking caret */
+    dissolve 1s ease-out 4s forwards;
+  /* Dissolves after typing */
+}
+
+.typewriter.done {
+  border-right: none;
+  /* Remove the caret after typing */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
