@@ -10,9 +10,8 @@ export default async function EducationContainer() {
         <>
             <div className="grid grid-cols-3 w-3/4 md:w-2/3 mt-8 gap-6 items-center mx-auto">
                 {/* Image (1/3 of the width) */}
-                <div className="col-span-3 md:col-span-1 flex justify-start">
+                <div className="col-span-3 mx-auto md:col-span-1 flex md:justify-start">
                     <Image
-                        className='size-30'
                         src="/umich-logo.webp"
                         width={200}
                         height={200}

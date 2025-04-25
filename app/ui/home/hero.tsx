@@ -29,13 +29,13 @@ export default function BannerContainer() {
                     </div>
                 </div>
                 {/* Right Side: Image */}
-                <div className=" w-fit md:w-1/3 md:h-screen mx-auto text-center rounded-xl md:mt-0 ">
+                <div className=" w-fit md:w-1/3 md:h-screen mx-auto flex justify-center rounded-xl md:mt-0 ">
                     <Image
-                        src="/mitch-ai.png" // Path to your SVG in the public folder
+                        src="/mitch-ai.png"
                         alt="AI Generated Image of mitch duffy"
-                        width={300} // Adjust as needed
-                        height={300} // Adjust as needed
-                        className="h-full object-contain rounded-xl"
+                        width={300}
+                        height={300}
+                        className="object-contain rounded-xl"
                     />
                 </div>
             </div >

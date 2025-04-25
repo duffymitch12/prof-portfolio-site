@@ -1,7 +1,8 @@
 // componeent for experiences
 // import { Suspense } from "react";
 import resume from "@/app/lib/resume.json";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export default async function ExperienceWrapper() {
     const data = resume.experience;
@@ -21,10 +22,13 @@ export default async function ExperienceWrapper() {
                             Here’s a timeline of my professional experiences that are relevant to my aspired career path of Web Development.
                         </p>
                         <a
-                            href="#"
+                            href="/Mitchell Duffy Resume Website.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-[#00416A] mr-auto hover:opacity-80 text-white rounded shadow hover:shadow-lg py-2 px-4"
                         >
-                            Download Resume
+                            <FontAwesomeIcon icon={faDownload} className="mr-2" />
+                            View Resume
                         </a>
                     </div>
 
