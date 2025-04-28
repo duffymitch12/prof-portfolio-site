@@ -53,22 +53,6 @@
       "url": "https://github.com/duffymitch12/prof-portfolio-site",
       "buttonText": "View Repository",
       "underConstruction": false
-    },
-    {
-      "name": "HIIT Workout Tracker & Timer",
-      "description": "A personal web-based app to track HITT workouts and create customizable workouts (able to set number of sets, duration of workout set, and amount of rounds) with a timer.",
-      "codeBase": [
-        "html/css",
-        "typescript",
-        "react",
-        "tailwindcss",
-        "next.js"
-      ],
-      "date": "🚧 Currently Under Construction 🚧",
-      "filePath": "/fitness-equipment.jpg",
-      "url": "https://github.com/duffymitch12/prof-portfolio-site",
-      "buttonText": "View Repository",
-      "underConstruction": true
     }
   ],
   "technicalSkills": [

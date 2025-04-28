@@ -59,9 +59,9 @@ export default function SkillsCloud() {
     }, [skills]);
 
     return (
-        <section id="skills" className="relative w-full h-[450px] md:h-[500px] bg-[#fefefe]">
+        <section id="skills" className="relative w-full h-[450px] md:h-[500px] bg-[#fefefe] pl-8 md:px-0">
             {/* Title */}
-            <h2 className="text-center text-xl md:text-2xl font-semibold uppercase tracking-wide border-b-4 border-[#277986] pb-2 mb-6 mx-auto w-max">
+            <h2 className="w-full px-6 mb-6 border-b-4 border-[#277986] md:border-0 md:text-2xl text-xl font-semibold text-black md:underline md:underline-offset-[7px] md:decoration-[#277986] md:decoration-4 uppercase md:text-center -indent-4">
                 Skills
             </h2>
 

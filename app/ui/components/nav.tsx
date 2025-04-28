@@ -8,7 +8,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import NavItem from '@/app/ui/components/nav-item';
 
 
-const Navbar = () => {
+export default function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
     const pathname = usePathname();
@@ -101,7 +101,4 @@ const Navbar = () => {
             }
         </nav >
     );
-    //absolute top-2 right-6
 };
-
-export default Navbar;

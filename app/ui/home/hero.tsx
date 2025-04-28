@@ -1,10 +1,8 @@
 
-import EducationContainer from "@/app/ui/home/education"
-import Intro from "@/app/ui/home/intro"
-import { IntroSkeleton, EducationSkeleton } from "@/app/ui/skeletons"
+import IntroProfileSection from "@/app/ui/home/intro"
 import Image from "next/image";
 // import Typewriter from "@/app/ui/home/typewriter";
-import { Suspense } from "react";
+// import { Suspense } from "react";
 
 export default function BannerContainer() {
     return (
@@ -13,23 +11,17 @@ export default function BannerContainer() {
             {/* <Typewriter /> */}
 
             {/* Hero Block */}
-            <div className="flex flex-col-reverse md:flex-wrap items-center h-screen md:mt-0 mt-24" id="hero">
+            <div className="flex flex-col-reverse md:flex-wrap h-screen md:mt-0 mt-18" id="hero">
                 {/* Left Side: Text Content */}
                 <div
                     className="bg-white w-full md:w-2/3 h-screen flex items-center justify-center"
                 >
-                    <div className="mx-8 md:mx-20 md:pl-6">
-                        <Suspense fallback={<IntroSkeleton />}>
-                            <Intro />
-                        </Suspense>
-                        {/* Description */}
-                        <Suspense fallback={<EducationSkeleton />}>
-                            <EducationContainer />
-                        </Suspense>
+                    <div className="mx-8 md:mx-12 md:pl-6">
+                        <IntroProfileSection />
                     </div>
                 </div>
                 {/* Right Side: Image */}
-                <div className=" w-fit md:w-1/3 md:h-screen mx-auto flex justify-center rounded-xl md:mt-0 ">
+                <div className="w-fit md:w-1/3 md:h-screen mx-auto flex justify-center md:mt-0 mt-8">
                     <Image
                         src="/mitch-ai.png"
                         alt="AI Generated Image of mitch duffy"

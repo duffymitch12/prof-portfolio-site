@@ -4,7 +4,7 @@ import BannerContainer from "@/app/ui/home/hero";
 import { Suspense } from "react";
 import ExperienceWrapper from "@/app/ui/home/experience";
 import ProjectWrapper from "@/app/ui/home/projects";
-import TechSkillsWrapper from "@/app/ui/home/skills";
+import SkillsCloud from "@/app/ui/home/skills";
 import { ExperienceSkeleton, ProjectsSkeleton, SkillsSkeleton } from "@/app/ui/skeletons";
 import Navbar from '@/app/ui/components/nav'
 // import MobileAlert from "./ui/components/mobile-alert";
@@ -26,7 +26,7 @@ export default async function Page() {
         <ProjectWrapper />
       </Suspense>
       <Suspense fallback={<SkillsSkeleton />}>
-        <TechSkillsWrapper />
+        <SkillsCloud />
       </Suspense>
     </main>
   );
