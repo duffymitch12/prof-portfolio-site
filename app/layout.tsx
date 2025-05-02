@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { firaSans } from "@/app/ui/fonts";
 import '@/app/ui/globals.css';
+import { Analytics } from "@vercel/analytics/react"
+
 
 import Footer from "@/app/ui/components/footer";
 import "@/app/lib/fontawesome";
@@ -29,6 +31,7 @@ export default function RootLayout({
       </head>
       <body className={`${firaSans.variable} --font-fira-sans antialiased`}>
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
