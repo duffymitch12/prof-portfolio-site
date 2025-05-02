@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mitch-duffy.vercel.app/
+
+# Sitemaps
+Sitemap: https://mitch-duffy.vercel.app/sitemap.xml
