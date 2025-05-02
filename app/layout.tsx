@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { firaSans } from "@/app/ui/fonts";
 import '@/app/ui/globals.css';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 import Footer from "@/app/ui/components/footer";
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className={`${firaSans.variable} --font-fira-sans antialiased`}>
         {children}
         <Analytics />
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
