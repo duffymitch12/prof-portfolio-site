@@ -1,5 +1,5 @@
 'use client';
-// import Link from 'next/link';
+import Link from 'next/link';
 // import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -8,19 +8,24 @@ import { usePathname, useRouter } from 'next/navigation';
 import NavItem from '@/app/ui/components/nav-item';
 
 
-export default function Navbar(){
+export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
     const pathname = usePathname();
 
 
-    const handleScroll = (id: string) => {
-        if (pathname !== '/') {
-            router.push(`/#${id}`);
-        } else {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+    const handleNav = (target: string) => {
+        if (target.startsWith('/')) {
+            router.push(target);
+        }
+        else {
+            if (pathname !== '/') {
+                router.push(`/#${target}`);
+            } else {
+                const element = document.getElementById(target);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         }
         setIsOpen(false);
@@ -44,10 +49,16 @@ export default function Navbar(){
                 {/* Nav Links - Desktop */}
                 <div className="hidden md:flex flex-row space-x-8">
                     {/* Left Links */}
-                    <NavItem label='education' targetId='hero' onClick={handleScroll} variant='desktop' />
-                    <NavItem label='experience' targetId='experience' onClick={handleScroll} variant='desktop' />
-                    <NavItem label='projects' targetId='projects' onClick={handleScroll} variant='desktop' />
-                    <NavItem label='skills' targetId='skills' onClick={handleScroll} variant='desktop' />
+                    <NavItem label='education' targetId='hero' onClick={handleNav} variant='desktop' />
+                    <NavItem label='experience' targetId='experience' onClick={handleNav} variant='desktop' />
+                    <NavItem label='projects' targetId='projects' onClick={handleNav} variant='desktop' />
+                    <NavItem label='skills' targetId='skills' onClick={handleNav} variant='desktop' />
+                    <div className='border-t-2 w-5/6 border-gray-600 opacity-20'></div>
+                    {/* <Link href="/portfolio"
+                        className="text-center mx-auto py-4 hover:text-opacity-100"
+                    >
+                        portfolio
+                    </Link> */}
                 </div>
             </div>
             {/* Hamburger Icon (Mobile) */}
@@ -80,19 +91,13 @@ export default function Navbar(){
                                 </button>
                             </div>
                             <div className='border-t-2 w-full border-gray-600 opacity-20'></div>
-                            <NavItem label='education' targetId='hero' onClick={handleScroll} variant='mobile' />
+                            <NavItem label='education' targetId='hero' onClick={handleNav} variant='mobile' />
                             <div className='border-t-2 w-5/6 border-gray-600 opacity-20'></div>
-                            <NavItem label='experience' targetId='experience' onClick={handleScroll} variant='mobile' />
+                            <NavItem label='experience' targetId='experience' onClick={handleNav} variant='mobile' />
                             <div className='border-t-2 w-5/6 border-gray-600 opacity-20'></div>
-                            <NavItem label='projects' targetId='projects' onClick={handleScroll} variant='mobile' />
+                            <NavItem label='projects' targetId='projects' onClick={handleNav} variant='mobile' />
                             <div className='border-t-2 w-5/6 border-gray-600 opacity-20'></div>
-                            <NavItem label='skills' targetId='skills' onClick={handleScroll} variant='mobile' />
-                            <div className='hidden border-t-2 w-5/6 border-gray-600 opacity-20'></div>
-                            {/* <Link href="/portfolio"
-                                className="hidden text-center mx-auto py-4 hover:text-opacity-100"
-                            >
-                                portfolio
-                            </Link> */}
+                            <NavItem label='skills' targetId='skills' onClick={handleNav} variant='mobile' />
                         </div>
                     </div>
 

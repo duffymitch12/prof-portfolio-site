@@ -1,6 +1,6 @@
 'use client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faDumbbell } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faDumbbell, faCloud } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { clsx } from 'clsx';
@@ -12,6 +12,11 @@ const links = [
         name: 'HIIT',
         href: '/portfolio/fitness',
         icon: faDumbbell,
+    },
+    {
+        name: 'Weather',
+        href: '/portfolio/weather',
+        icon: faCloud,
     },
 ];
 
