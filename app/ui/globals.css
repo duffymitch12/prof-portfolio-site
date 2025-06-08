@@ -44,6 +44,11 @@
   --transition-duration: 300ms;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
