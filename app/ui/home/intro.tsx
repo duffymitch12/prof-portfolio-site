@@ -37,9 +37,9 @@ export default async function IntroProfileSection() {
                 </div>
                 <div className="md:text-md text-sm text-gray-800 font-medium">
                     I am a recent graduate with a Bachelor of Science in Computer Science from the <span>{education.institution}</span>, Ann Arbor (December 2024). I have hands-on experience in
-                    <span className="md:text-md text-sm font-extrabold text-[#f68c5a]"> Web Development </span>
+                    <span className="md:text-md text-sm font-extrabold text-[#973B11]"> Web Development </span>
                     and a background in working with
-                    <span className="md:text-md text-sm font-extrabold text-[#f68c5a]"> Startups </span>,
+                    <span className="md:text-md text-sm font-extrabold text-[#973B11]"> Startups </span>,
                     which has helped me develop a versatile skill set for building innovative solutions.
                 </div>
             </div>

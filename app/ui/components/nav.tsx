@@ -73,13 +73,13 @@ export default function Navbar() {
             {/* Mobile Full-Screen Menu */}
             {!isOpen && (<h1 className="md:hidden text-2xl font-semibold text-[#000101] text-opacity-100 ml-4 mt-2 text-nowrap underline underline-offset-[6px] decoration-[#277986] decoration-[3px]">Mitchell Duffy</h1>)}
             {isOpen && (
-                <div className="md:hidden grid grid-cols-4 gap-0 text-left transition-transform duration-300 absolute inset-0">
+                <div className="md:hidden fixed grid grid-cols-4 gap-0 text-left transition-transform duration-300 inset-0">
                     {/* Left Column (close menu) */}
-                    <div className="col-span-1 h-full w-full bg-gray-950 bg-opacity-80" onClick={closeMenu}>
+                    <div className="col-span-1 h-full w-full backdrop-blur-md" onClick={closeMenu}>
                         {/* Transparent Close Menu */}
                     </div>
                     {/* Right Column Navigation */}
-                    <div className="col-span-3 bg-white h-dvh w-full">
+                    <div className="col-span-3 bg-white h-screen w-full shadow-lg">
                         <div className="flex flex-col items-end text-lg font-semibold text-[#1B1B1B]">
                             <div className="flex flex-row w-full justify-between pb-4">
                                 {isOpen && (<h1 className="md:hidden text-2xl font-semibold text-[#000101] text-opacity-100 ml-4 mt-2 text-nowrap underline underline-offset-[6px] decoration-[#277986] decoration-[3px]   ">Mitchell Duffy</h1>)}

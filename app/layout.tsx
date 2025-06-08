@@ -18,8 +18,12 @@ export const metadata: Metadata = {
   icons: {
     icon: '/user-astronaut-solid.svg',
   },
-  viewport: "width=device-width, initial-scale=1.0"
 };
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+}
 
 export default function RootLayout({
   children,

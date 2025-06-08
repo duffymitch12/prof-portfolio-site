@@ -3,6 +3,7 @@
 import resume from "@/app/lib/resume.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default async function ExperienceWrapper() {
     const data = resume.experience;
@@ -52,7 +53,8 @@ export function Job({
     start,
     end,
     info,
-    idx
+    idx,
+    fileName
 }: {
     title: string;
     company: string;
@@ -61,32 +63,41 @@ export function Job({
     end: string;
     info: string[];
     idx: number;
+    fileName: string;
 }) {
     return (
         <>
-            <div className="relative flex flex-col md:flex-row items-start md:items-center mb-8 w-full">
+            <div className="relative flex flex-col md:flex-row items-start md:items-center mb-8 w-full ">
 
                 {/* Content Box */}
                 <div
                     className={`
-                    w-10/12 md:w-5/12 mt-10 md:mt-0 px-6 py-4 bg-white shadow-lg rounded-lg md:mx-0 mx-auto
+                    w-10/12 md:w-5/12 mt-10 md:mt-0 px-6 py-4 bg-white shadow-lg rounded-lg md:mx-0 mx-auto hover:bg-gray-100 transition duration-200 ease-in-out
                     ${idx % 2 === 0 ? "md:ml-auto md:text-left" : "md:mr-auto md:text-left"}
                 `}
                 >
-                    <p className="mb-3 text-base text-[#00416A] font-medium">{start} - {end}</p>
+                    <div className="flex items-center justify-between mb-3 gap-2">
+                        <Image
+                            src={`/${fileName}`}
+                            alt={`${company} logo`}
+                            width={100}
+                            height={100}
+                            className="rounded object-cover pr-4 py-2"
+                        />
+                        <p className="text-base text-[#00416A] font-medium">{start} - {end}</p>
+                    </div>
                     <h4 className="mb-3 font-bold text-lg md:text-2xl">
                         {title}
                         <span className="font-black px-2">|</span>
                         {company}
                     </h4>
                     <p className="text-sm md:text-base italic text-[#312F2F]">{location}</p>
-                    <ul className="list-disc pl-5">
-                        {info.map((description, i) => (
-                            <li key={i} className="text-sm md:text-md text-[#312F2F] my-2">
-                                {description}
-                            </li>
+                    <div className="space-y-3 mt-4 leading-relaxed text-sm md:text-base text-[#312F2F] max-w-prose">
+                        {info.map((paragraph, i) => (
+                            <p key={i}>{paragraph}</p>
                         ))}
-                    </ul>
+                    </div>
+
                 </div>
             </div>
         </>
