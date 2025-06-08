@@ -19,6 +19,8 @@
 
 :root {
   --font-main: 'Fira Sans', sans-serif;
+  --font-mono: 'Fira Mono', monospace;
+  --font-fira-code: 'Fira Code', monospace;
   /* Colors */
   --color-background: #fefefe;
   --color-text-primary: #000101;

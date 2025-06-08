@@ -13,7 +13,7 @@ export default async function ExperienceWrapper() {
             <div className="flex bg-[#fefefe] text-gray-800 py-8 w-full" id="experience">
                 <div className="container mx-auto flex flex-col items-start md:flex-row my-2 md:mb-4">
                     {/* Left Side: Header */}
-                    <div className="flex flex-col w-full sticky md:w-1/3 mt-2 md:mt-12 px-8 mb-12 md:mb-0">
+                    <div className="flex flex-col w-full sticky md:w-1/3 mt-2 md:ml-10 md:mt-12 px-8 mb-12 md:mb-0">
                         <h2 className="justify-start w-screen md:w-full mb-6  border-b-4 border-[#277986] md:border-0 md:text-2xl text-xl font-semibold text-black md:underline md:underline-offset-[7px] md:decoration-[#277986] md:decoration-4 uppercase md:indent-0 indent-2">Work Experience</h2>
                         <p className="text-sm md:text-base text-gray-800 mb-4">
                             Here’s a timeline of my professional experiences that are relevant to my aspired career path of Web Development.
@@ -30,7 +30,7 @@ export default async function ExperienceWrapper() {
                     </div>
 
                     {/* Right Side: Timeline */}
-                    <div className="relative w-full md:w-2/3">
+                    <div className="relative w-full md:w-2/3 md:mr-4">
                         {/* Timeline Line */}
                         <div className="absolute right-1/2 md:left-1/2 transform md:-translate-x-1/2 md:w-2 w-4 bg-[#A30000] h-full rounded"></div>
 
@@ -94,24 +94,23 @@ export function Job({
                                 />
                             </div>
                             <div className="col-span-2 justify-items-center text-center w-full ml-6 pt-2 p-2">
-                                <h4 className="mb-3 font-bold text-lg md:text-xl">
+                                <h4 className="mb-3 font-bold text-lg md:text-xl font-mono">
                                     {company}
                                 </h4>
                                 <p className="text-base font-medium break-normal" style={{ color: accent }}>{start} - {end}</p>
                             </div>
                         </div>
                     </div>
-                    <div className="flex md:flex-row flex-col gap-4 justify-between mt-4 px-6">
-                        <p className="text-[#276FBF] mb-3 italic text-sm md:text-base">
+                    <div className="flex flex-row gap-4 justify-between mt-4 mb-2 px-6">
+                        <p className="text-[#276FBF] italic text-sm md:text-base">
                             <FontAwesomeIcon icon={faMapPin} className="mr-2 text-[#312F2F]" />
                             {title}
                         </p>
-
-                        <p className="text-xs md:text-base italic text-[#312F2F]">
+                        <p className="text-sm mb-2 md:text-base italic opacity-70 text-[#312F2F]">
                             <FontAwesomeIcon icon={faBarsStaggered} className="mr-2 text-[#312F2F]" />{location}
                         </p>
                     </div>
-                    <div className="space-y-3 mt-4 leading-relaxed text-xs md:text-sm text-[#312F2F] max-w-prose px-6 ">
+                    <div className="space-y-3 md:mt-4 mt-2 leading-relaxed text-xs md:text-sm text-[#312F2F] max-w-prose px-6 ">
                         {info.map((paragraph, i) => (
                             <p key={i}>{paragraph} !=</p>
                         ))}
