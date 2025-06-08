@@ -5,17 +5,17 @@ export default async function ProjectWrapper() {
     const data = resume.projects;
     const numProjects = data.length;
     // Parent container settings - now exactly matches content box container
-    const parentClass = "md:grid md:grid-cols-6 flex-col justify-center md:w-5/6 w-full py-8 bg-[#fefefe]";
+    const parentClass = "md:grid md:grid-cols-6 justify-center md:w-5/6 w-full py-8 bg-[#fefefe]";
 
     // Child container width - matches content box exactly
-    let widthClass = "flex mx-auto md:col-span-2 md:col-start-1 justify-center w-10/12";
+    let widthClass = "flex mx-auto md:col-span-2 justify-center w-10/12";
 
     if (numProjects === 1) {
         // parentClass = "flex justify-center w-full md:w-2/3 px-6 py-8 bg-[#fefefe]";
-        widthClass = "flex mx-auto md:col-span-4 justify-center md:col-start-2 w-10/12";
+        widthClass = "flex mx-auto md:col-span-4 justify-center w-10/12";
     } else if (numProjects === 2) {
         // parentClass = "flex flex-wrap justify-center w-full px-6 py-8 bg-[#fefefe]";
-        widthClass = "flex mx-auto md:col-span-3 justify-center md:col-start-1 w-10/12";
+        widthClass = "flex mx-auto md:col-span-3 justify-center w-10/12";
     }
 
     return (
@@ -33,7 +33,7 @@ export default async function ProjectWrapper() {
                             header={p.name}
                             additional={p.date}
                             description={p.description}
-                            fileName={p.filePath}
+                            fileName={p.fileName}
                             URL={p.url}
                             buttonText={p.buttonText}
                             additionalList={p.codeBase}

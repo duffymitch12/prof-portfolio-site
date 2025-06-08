@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${firaSans.variable} --font-fira-sans antialiased`}>
+      <body className={`${firaSans.className} ${firaSans.variable} antialiased`}>
         {children}
         <Analytics />
         <SpeedInsights />

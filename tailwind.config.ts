@@ -14,6 +14,8 @@ export default {
       },
       fontFamily: {
         sans: ['var(--font-fira-sans)', 'sans-serif'],
+        mono: ['var(--font-fira-mono)', 'monospace'],
+        code: ['var(--font-fira-code)', 'monospace'],
       },
     },
   },

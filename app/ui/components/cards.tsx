@@ -25,8 +25,8 @@ export default function card({
     // # TODO: see if need to fix styling for card alignment and sizing
     return (
         <>
-            <div className="relative w-full mx-auto">
-                <div className="bg-white shadow-md rounded-lg w-full dark:bg-gray-800 dark:border-gray-700">
+            <div className="relative w-full mx-auto mb-4">
+                <div className="bg-white shadow-md rounded-lg w-full h-full flex flex-col justify-between dark:bg-gray-800 dark:border-gray-700">
                     <div className="relative">
                         {underConstruction ?
                             <Image
@@ -38,10 +38,10 @@ export default function card({
                             />
                             :
                             <Image
-                                className="blur-xs rounded-t-lg mx-auto w-full object-cover h-30"
+                                className="blur-xs rounded-t-lg mx-auto w-full object-cover h-30 opacity-90"
                                 width={400}
                                 height={300}
-                                src={fileName}
+                                src={`/${fileName}`}
                                 alt="card image"
                             />
                         }
@@ -49,7 +49,7 @@ export default function card({
                         {additional && <p className="absolute bottom-0 right-0 bg-[#00416a] text-white text-sm pr-3 pl-12 py-1 rounded-tl-2xl">{additional}</p>}
                     </div>
 
-                    <div className="p-6">
+                    <div className="p-6 mb-2">
                         <h5 className="text-gray-900 font-medium md:text-xl text-md tracking-tight mb-3 dark:text-white">{header}</h5>
                         <p className="font-light text-gray-700 mb-3 dark:text-gray-400 md:text-md text-sm">{description}</p>
                         {additionalList && (

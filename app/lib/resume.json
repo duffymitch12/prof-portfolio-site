@@ -15,13 +15,16 @@
     {
       "title": "Startup Intern",
       "company": "Luci Smart Finance",
-      "location": "(Remote) Houston, TX",
+      "location": "Houston, TX",
       "start": "Feb. 2022",
       "end": "Present",
       "info": [
         "At Luci, I’ve worn multiple hats—from leading beta testing efforts and identifying UX/UI improvements, to recruiting users as a campus ambassador and collecting product feedback. I also helped enhance the front-end of the marketing site and waitlist page to improve usability and drive engagement ahead of the product launch."
       ],
-      "fileName": "luci-dark-logo.png"
+      "fileName": "luci-dark-logo.png",
+      "primary": "#353d4d",
+      "secondary": "#fcfdfe",
+      "accent" : "#fe8577"
     },
     {
       "title": "Web Developer",
@@ -32,7 +35,10 @@
       "info": [
         "During my time at CAEN, I supported a range of web projects for the College of Engineering—building and maintaining sites for faculty and labs using WordPress, HTML, and CSS. One of the highlights was developing a tool that reduced transcription costs by 50% by identifying the most cost-effective service through automated comparisons. I also worked closely with stakeholders to troubleshoot issues and improve site functionality based on user needs."
       ],
-      "fileName": "caen-logo.png"
+      "fileName": "caen-logo.png",
+      "primary": "#212e5e",
+      "secondary": "#f9fef8",
+      "accent" : "#f6cc40"
     }
   ],
   "projects": [
@@ -47,9 +53,26 @@
         "next.js"
       ],
       "date": "Jan-Feb, 2025",
-      "filePath": "/gradient-laptop-darkbg.jpg",
+      "fileName": "gradient-laptop-darkbg.jpg",
       "url": "https://github.com/duffymitch12/prof-portfolio-site",
       "buttonText": "View Repository",
+      "underConstruction": false
+    },
+    {
+      "name": "Mom & Pop Template Website",
+      "description": "A template website marketing tool for smaller supply companies.",
+      "codeBase": [
+        "React.tsx",
+        "tailwindcss",
+        "next.js",
+        "postgresql",
+        "prisma",
+        "neonDB"
+      ],
+      "date": "Jan-Feb, 2025",
+      "fileName": "mom-pop-dev.png",
+      "url": "https://mom-pop-template.vercel.app/",
+      "buttonText": "Dev Deployment",
       "underConstruction": false
     }
   ],

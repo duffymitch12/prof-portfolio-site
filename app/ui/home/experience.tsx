@@ -2,7 +2,7 @@
 // import { Suspense } from "react";
 import resume from "@/app/lib/resume.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faMapPin, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export default async function ExperienceWrapper() {
@@ -54,7 +54,10 @@ export function Job({
     end,
     info,
     idx,
-    fileName
+    fileName,
+    primary,
+    secondary,
+    accent
 }: {
     title: string;
     company: string;
@@ -64,42 +67,58 @@ export function Job({
     info: string[];
     idx: number;
     fileName: string;
+    primary: string;
+    secondary: string;
+    accent: string;
 }) {
     return (
         <>
-            <div className="relative flex flex-col md:flex-row items-start md:items-center mb-8 w-full ">
+            <div className="relative flex flex-col md:flex-row items-start md:items-center mb-8 w-full">
 
                 {/* Content Box */}
                 <div
                     className={`
-                    w-10/12 md:w-5/12 mt-10 md:mt-0 px-6 py-4 bg-white shadow-lg rounded-lg md:mx-0 mx-auto hover:bg-gray-100 transition duration-200 ease-in-out
+                    w-10/12 md:w-5/12 max-w-full break-words lg:break-normal mt-10 md:mt-0 pb-6 bg-white shadow-lg rounded-lg md:mx-0 mx-auto hover:bg-gray-100 transition duration-200 ease-in-out
                     ${idx % 2 === 0 ? "md:ml-auto md:text-left" : "md:mr-auto md:text-left"}
                 `}
                 >
-                    <div className="flex items-center justify-between mb-3 gap-2">
-                        <Image
-                            src={`/${fileName}`}
-                            alt={`${company} logo`}
-                            width={100}
-                            height={100}
-                            className="rounded object-cover pr-4 py-2"
-                        />
-                        <p className="text-base text-[#00416A] font-medium">{start} - {end}</p>
+                    <div className="w-full px-6 py-4 rounded-t-lg" style={{ backgroundColor: primary, color: secondary }} id="job-header">
+                        <div className="grid grid-cols-3 gap-0">
+                            <div className="col-span-1 w-full">
+                                <Image
+                                    src={`/${fileName}`}
+                                    alt={`${company} logo`}
+                                    width={100}
+                                    height={100}
+                                    className="rounded object-cover pr-4 py-2"
+                                />
+                            </div>
+                            <div className="col-span-2 justify-items-center text-center w-full ml-6 pt-2 p-2">
+                                <h4 className="mb-3 font-bold text-lg md:text-xl">
+                                    {company}
+                                </h4>
+                                <p className="text-base font-medium break-normal" style={{ color: accent }}>{start} - {end}</p>
+                            </div>
+                        </div>
                     </div>
-                    <h4 className="mb-3 font-bold text-lg md:text-2xl">
-                        {title}
-                        <span className="font-black px-2">|</span>
-                        {company}
-                    </h4>
-                    <p className="text-sm md:text-base italic text-[#312F2F]">{location}</p>
-                    <div className="space-y-3 mt-4 leading-relaxed text-sm md:text-base text-[#312F2F] max-w-prose">
+                    <div className="flex md:flex-row flex-col gap-4 justify-between mt-4 px-6">
+                        <p className="text-[#276FBF] mb-3 italic text-sm md:text-base">
+                            <FontAwesomeIcon icon={faMapPin} className="mr-2 text-[#312F2F]" />
+                            {title}
+                        </p>
+
+                        <p className="text-xs md:text-base italic text-[#312F2F]">
+                            <FontAwesomeIcon icon={faBarsStaggered} className="mr-2 text-[#312F2F]" />{location}
+                        </p>
+                    </div>
+                    <div className="space-y-3 mt-4 leading-relaxed text-xs md:text-sm text-[#312F2F] max-w-prose px-6 ">
                         {info.map((paragraph, i) => (
-                            <p key={i}>{paragraph}</p>
+                            <p key={i}>{paragraph} !=</p>
                         ))}
                     </div>
 
-                </div>
-            </div>
+                </div >
+            </div >
         </>
     )
 
