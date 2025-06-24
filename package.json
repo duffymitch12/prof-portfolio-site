@@ -27,6 +27,7 @@
     "next-sitemap": "^4.2.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
     "self-update": "^0.0.1"
   },
   "devDependencies": {

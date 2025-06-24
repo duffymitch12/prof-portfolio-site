@@ -13,15 +13,25 @@
   },
   "experience": [
     {
-      "title": "Startup Intern",
+      "title": "Software Engineer",
       "company": "Luci Smart Finance",
       "location": "Houston, TX",
       "start": "Feb. 2022",
       "end": "Present",
-      "info": [
-        "At Luci, I’ve worn multiple hats—from leading beta testing efforts and identifying UX/UI improvements, to recruiting users as a campus ambassador and collecting product feedback. I also helped enhance the front-end of the marketing site and waitlist page to improve usability and drive engagement ahead of the product launch."
-      ],
+      "info":
+        "As a Software Engineer at **Luci Smart Finance**, I led the development and optimization of **front-end** pages for the marketing and waitlist experience using **React** and **Tailwind CSS**, significantly improving performance and accessibility. I collaborated closely with product and design teams to implement **UI/UX** improvements based on *Figma* prototypes and *user feedback* gathered through beta testing. In addition, I integrated **SEO** strategies to enhance organic discoverability and drive conversions. My role also included conducting **code reviews**, maintaining *Git* workflows, and enhancing test coverage to ensure production-grade quality across launches."
+      ,
       "fileName": "luci-dark-logo.png",
+      "links": [
+        {
+          "name": "Join Luci Website",
+          "url": "https://joinluci.com/"
+        },
+        {
+          "name": "Lucy Money Moves Blog (I help maintain & run)",
+          "url": "https://lucimoneymoves.beehiiv.com/"
+        }
+      ],
       "primary": "#353d4d",
       "secondary": "#fcfdfe",
       "accent" : "#fe8577"
@@ -32,10 +42,17 @@
       "location": "Ann Arbor, MI",
       "start": "Jul. 2022",
       "end": "Dec. 2024",
-      "info": [
-        "During my time at CAEN, I supported a range of web projects for the College of Engineering—building and maintaining sites for faculty and labs using WordPress, HTML, and CSS. One of the highlights was developing a tool that reduced transcription costs by 50% by identifying the most cost-effective service through automated comparisons. I also worked closely with stakeholders to troubleshoot issues and improve site functionality based on user needs."
-      ],
+      "info":
+        "At **CAEN IT**, I built and maintained responsive websites and tools for faculty and research groups in the *University of Michigan College of Engineering* using **HTML**, **CSS**, and **JavaScript** within **WordPress** environments. I also developed a **Python**-based internal tool that **reduced transcription service costs by 50%** through automated *API*-driven vendor comparisons. My responsibilities included managing *Git* workflows, participating in **agile sprint planning**, conducting **code reviews**, and collaborating with stakeholders to resolve issues and improve usability."
+
+      ,
       "fileName": "caen-logo.png",
+      "links": [
+        {
+          "name": "CAEN IT Web Services",
+          "url": "https://caen.engin.umich.edu/web/"
+        }
+      ],
       "primary": "#212e5e",
       "secondary": "#f9fef8",
       "accent" : "#f6cc40"

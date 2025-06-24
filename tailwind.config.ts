@@ -13,9 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['var(--font-fira-sans)', 'sans-serif'],
-        mono: ['var(--font-fira-mono)', 'monospace'],
-        code: ['var(--font-fira-code)', 'monospace'],
+        sans: ['var(--font-fira-sans)', 'fira-sans'],
+        mono: ['var(--font-fira-mono)', 'fira-mono'],
+        code: ['var(--font-fira-code)', 'fira-code'],
       },
     },
   },

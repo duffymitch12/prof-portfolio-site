@@ -1,9 +1,11 @@
-// componeent for experiences
-// import { Suspense } from "react";
+// @/app/ui/home/experience.tsx
+// This file is part of the Mitchell Duffy Portfolio project.
 import resume from "@/app/lib/resume.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faMapPin, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import ReactMarkdown from 'react-markdown';
+
 
 export default async function ExperienceWrapper() {
     const data = resume.experience;
@@ -57,23 +59,25 @@ export function Job({
     fileName,
     primary,
     secondary,
-    accent
+    accent,
+    links,
 }: {
     title: string;
     company: string;
     location: string;
     start: string;
     end: string;
-    info: string[];
+    info: string;
     idx: number;
     fileName: string;
     primary: string;
     secondary: string;
     accent: string;
+    links?: { name: string; url: string }[];
 }) {
     return (
         <>
-            <div className="relative flex flex-col md:flex-row items-start md:items-center mb-8 w-full">
+            <div className="relative flex flex-col md:flex-row items-start md:items-center mb-8 w-full font-sans">
 
                 {/* Content Box */}
                 <div
@@ -110,12 +114,24 @@ export function Job({
                             <FontAwesomeIcon icon={faBarsStaggered} className="mr-2 text-[#312F2F]" />{location}
                         </p>
                     </div>
-                    <div className="space-y-3 md:mt-4 mt-2 leading-relaxed text-xs md:text-sm text-[#312F2F] max-w-prose px-6 ">
-                        {info.map((paragraph, i) => (
-                            <p key={i}>{paragraph} !=</p>
-                        ))}
+                    <div className="space-y-3 md:mt-4 mt-2 leading-relaxed text-xs md:text-sm text-[#312F2F] max-w-prose px-6 font-mono">
+                        <ReactMarkdown>{info}</ReactMarkdown>
                     </div>
-
+                    {links && links.length > 0 && (
+                        <div className="mt-4 px-6 pb-4 space-y-1">
+                            <h5 className="font-bold md:text-base text-sm  text-gray-900">Related Links:</h5>
+                            <div className="md:text-sm text-xs font-medium italic text-[#276FBF] space-y-1">
+                                {links.map((link, i) => (
+                                    <p key={i}>
+                                        🔗{" "}
+                                        <a href={link.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                            {link.name}
+                                        </a>
+                                    </p>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div >
             </div >
         </>
