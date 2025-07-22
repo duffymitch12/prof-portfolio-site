@@ -24,15 +24,15 @@
 
 //   // set the timesteps, like "current", "1h" and "1d"
 //   const timesteps = ["current", "1h", "1d"];
-  
+
 //   // configure the time frame up to 6 hours back and 15 days out
 //   const now = moment.utc();
 //   const startTime = moment.utc(now).add(0, "minutes").toISOString();
 //   const endTime = moment.utc(now).add(1, "days").toISOString();
-  
+
 //   // specify the timezone, using standard IANA timezone format
 //   const timezone = "America/New_York";
-  
+
 //   // request the timelines with all the query string parameters as options
 //   const getTimelineParameters =  queryString.stringify({
 //       API_KEY,
@@ -44,11 +44,11 @@
 //       endTime,
 //       timezone,
 //   }, {arrayFormat: "comma"});
-  
+
 //   fetch(getTimelineURL + "?" + getTimelineParameters, {method: "GET", compress: true})
 //     .then((result) => result.json())
 //     .then((json) => console.log(json)
 //     .catch((error) => console.error("error: " + err));
 // // export default async function getWeatherData() {
 
-// // }    
+// // }

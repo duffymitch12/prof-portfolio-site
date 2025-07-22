@@ -18,9 +18,7 @@
       "location": "Houston, TX",
       "start": "Feb. 2022",
       "end": "Present",
-      "info":
-        "As a Software Engineer at **Luci Smart Finance**, I led the development and optimization of **front-end** pages for the marketing and waitlist experience using **React** and **Tailwind CSS**, significantly improving performance and accessibility. I collaborated closely with product and design teams to implement **UI/UX** improvements based on *Figma* prototypes and *user feedback* gathered through beta testing. In addition, I integrated **SEO** strategies to enhance organic discoverability and drive conversions. My role also included conducting **code reviews**, maintaining *Git* workflows, and enhancing test coverage to ensure production-grade quality across launches."
-      ,
+      "info": "As a Software Engineer at **Luci Smart Finance**, I led the development and optimization of **front-end** pages for the marketing and waitlist experience using **React** and **Tailwind CSS**, significantly improving performance and accessibility. I collaborated closely with product and design teams to implement **UI/UX** improvements based on *Figma* prototypes and *user feedback* gathered through beta testing. In addition, I integrated **SEO** strategies to enhance organic discoverability and drive conversions. My role also included conducting **code reviews**, maintaining *Git* workflows, and enhancing test coverage to ensure production-grade quality across launches.",
       "fileName": "luci-dark-logo.png",
       "links": [
         {
@@ -34,7 +32,7 @@
       ],
       "primary": "#353d4d",
       "secondary": "#fcfdfe",
-      "accent" : "#fe8577"
+      "accent": "#fe8577"
     },
     {
       "title": "Web Developer",
@@ -42,10 +40,8 @@
       "location": "Ann Arbor, MI",
       "start": "Jul. 2022",
       "end": "Dec. 2024",
-      "info":
-        "At **CAEN IT**, I built and maintained responsive websites and tools for faculty and research groups in the *University of Michigan College of Engineering* using **HTML**, **CSS**, and **JavaScript** within **WordPress** environments. I also developed a **Python**-based internal tool that **reduced transcription service costs by 50%** through automated *API*-driven vendor comparisons. My responsibilities included managing *Git* workflows, participating in **agile sprint planning**, conducting **code reviews**, and collaborating with stakeholders to resolve issues and improve usability."
+      "info": "At **CAEN IT**, I built and maintained responsive websites and tools for faculty and research groups in the *University of Michigan College of Engineering* using **HTML**, **CSS**, and **JavaScript** within **WordPress** environments. I also developed a **Python**-based internal tool that **reduced transcription service costs by 50%** through automated *API*-driven vendor comparisons. My responsibilities included managing *Git* workflows, participating in **agile sprint planning**, conducting **code reviews**, and collaborating with stakeholders to resolve issues and improve usability.",
 
-      ,
       "fileName": "caen-logo.png",
       "links": [
         {
@@ -55,20 +51,14 @@
       ],
       "primary": "#212e5e",
       "secondary": "#f9fef8",
-      "accent" : "#f6cc40"
+      "accent": "#f6cc40"
     }
   ],
   "projects": [
     {
       "name": "Personal Portfolio Website",
       "description": "A personal portfolio website to showcase my skills in Web Development & Design, and get better handson experience with current technologies.",
-      "codeBase": [
-        "html/css",
-        "typescript",
-        "react",
-        "tailwindcss",
-        "next.js"
-      ],
+      "codeBase": ["html/css", "typescript", "react", "tailwindcss", "next.js"],
       "date": "Jan-Feb, 2025",
       "fileName": "gradient-laptop-darkbg.jpg",
       "url": "https://github.com/duffymitch12/prof-portfolio-site",
@@ -88,12 +78,28 @@
       ],
       "date": "Jan-Feb, 2025",
       "fileName": "mom-pop-dev.png",
-      "url": "https://mom-pop-template.vercel.app/",
+      "url": "https://forgevaweb.com",
       "buttonText": "Dev Deployment",
       "underConstruction": false
     }
   ],
   "technicalSkills": [
-    "c++", "python", "html", "css", "javascript", "Flask", "React", "tailwindcss", "next.js", "swiftui", "node.js", "typescript", "postgresql", "sqlit3", "vue.js", "bootstrap", "figma"
+    "c++",
+    "python",
+    "html",
+    "css",
+    "javascript",
+    "Flask",
+    "React",
+    "tailwindcss",
+    "next.js",
+    "swiftui",
+    "node.js",
+    "typescript",
+    "postgresql",
+    "sqlit3",
+    "vue.js",
+    "bootstrap",
+    "figma"
   ]
 }
