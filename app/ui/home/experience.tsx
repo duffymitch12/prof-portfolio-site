@@ -30,7 +30,7 @@ export default async function ExperienceWrapper() {
               to my aspired career path of Web Development.
             </p>
             <a
-              href="/Mitchell-Duffy-Resume Website.pdf"
+              href="/Mitch-Duffy-Resume (website).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#00416A] mr-auto hover:opacity-80 text-white rounded shadow hover:shadow-lg py-2 px-4"
