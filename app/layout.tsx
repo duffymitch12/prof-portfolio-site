@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { firaMono, firaSans, firaCode } from "@/app/ui/fonts";
-import "@/app/ui/globals.css";
+import { firaMono, firaSans, firaCode } from "@/app/fonts";
+import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import Footer from "@/app/ui/components/footer";
-import "@/app/lib/fontawesome";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
+import Footer from "@/components/Footer";
+import { Inter } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+
+
+// config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "Mitch Duffy's Professional Site",
@@ -29,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", inter.variable)}>
       <body
         className={`${firaSans.className} ${firaSans.variable} ${firaCode.variable} ${firaMono.variable} antialiased`}
       >

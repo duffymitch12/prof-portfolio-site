@@ -1,26 +1,21 @@
-// import Image from "next/image";
-// import resume from "@/app/lib/resume.json";
-import BannerContainer from "@/app/ui/home/hero";
+// app/page.tsx
+import BannerContainer from "@/components/home/Hero";
 import { Suspense } from "react";
-import ExperienceWrapper from "@/app/ui/home/experience";
-import ProjectWrapper from "@/app/ui/home/projects";
-import SkillsCloud from "@/app/ui/home/skills";
+import ExperienceWrapper from "@/components/home/Experience";
+import ProjectWrapper from "@/components/home/Projects";
+import SkillsCloud from "@/components/home/Skills";
 import {
   ExperienceSkeleton,
   ProjectsSkeleton,
   SkillsSkeleton,
-} from "@/app/ui/skeletons";
-import Navbar from "@/app/ui/components/nav";
-// import MobileAlert from "./ui/components/mobile-alert";
+} from "@/components/Skeletons";
+import Navbar from "@/components/Nav";
 
 export default async function Page() {
   return (
-    <main className="flex flex-col md:gap-6 gap-2 md:space-x-6 space-x-0 row-start-2 items-center bg-[#fefffe] ">
+    <main className="flex flex-col items-center bg-[#fefffe]">
       <Navbar />
-      {/* <MobileAlert /> */}
-      <div className="w-full" id="hero">
-        <BannerContainer />
-      </div>
+      <BannerContainer />
       <Suspense fallback={<ExperienceSkeleton />}>
         <ExperienceWrapper />
       </Suspense>
