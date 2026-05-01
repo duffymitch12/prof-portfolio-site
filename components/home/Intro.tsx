@@ -16,16 +16,17 @@ export default async function IntroProfileSection() {
       {/* Education row: logo + location details */}
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-6">
         <Image
-          src="/umich-logo.webp"
-          width={80}
-          height={80}
+          src="/umich-logo.png"
+          style={{ width: 'auto', height: 'auto' }}
+          width={85}
+          height={85}
           alt="University of Michigan Logo"
           className="shrink-0"
         />
         <div className="flex gap-6 text-sm font-light text-gray-600 justify-center sm:justify-start flex-wrap">
           <div>
             <span className="uppercase text-xs tracking-widest">City</span>
-            <p className="text-gray-800 font-semibold mt-1">Bloomfield Hills</p>
+            <p className="text-gray-800 font-semibold mt-1">Lake Orion</p>
           </div>
           <div>
             <span className="uppercase text-xs tracking-widest">State</span>
@@ -33,7 +34,7 @@ export default async function IntroProfileSection() {
           </div>
           <div>
             <span className="uppercase text-xs tracking-widest">Zipcode</span>
-            <p className="text-gray-800 font-semibold mt-1">48304</p>
+            <p className="text-gray-800 font-semibold mt-1">48360</p>
           </div>
         </div>
       </div>

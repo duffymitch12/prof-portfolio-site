@@ -33,7 +33,7 @@ export default function card({
                 className="blur-xs rounded-t-lg mx-auto object-cover object-top w-full h-30"
                 width={400}
                 height={300}
-                src="/under-construction.webp"
+                src="/under-construction.png"
                 alt="card image"
               />
             ) : (
